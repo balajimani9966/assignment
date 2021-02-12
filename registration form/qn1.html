@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <style>
+          input[type="submit"]{
+           max-width: 400px;
+           margin-left: 40%;
+          }
+          input{
+               margin-left: 50%;
+
+          }
+          select{
+              margin-left: 50%;
+          }
+          textarea{
+              margin-left: 50%;
+          }
+            
+        </style>
+        </head>
+        <body>
+            
+            <form align="center" action="api.js">
+            <h1 align ="center">RESERVATION FORM</h1><br><br>
+            <table align="center">
+                <tr><td>Name*</td>
+                <td>
+                    <input type="text" placeholder="name" required>
+                </td></tr>      
+
+<tr>
+    <td>
+        Email*
+    </td>
+    <td>
+        <input type="text" placeholder="email" required><br><br>
+    </td>
+</tr>
+<tr>
+    <td>
+        Room type
+    </td>
+    <td>
+        <select name="menu" >
+            <option>select</option>
+            <option>deluxe</option>
+            <option>AC</option>
+            <option>general</option>
+            <option>ladies</option>
+        
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>
+        Arrival date*
+    </td>
+    <td>
+        <input type="datetime" required><br><br>
+    </td>
+</tr>
+<tr>
+    <td>
+        Departure date*
+    </td>
+    <td>
+        <input type="datetime" required>
+    </td>
+</tr>
+  <tr>
+      <td>
+        Number of Guest*
+      </td>
+      <td>
+        <input type="number" id="guest"style="max-width : 250px;" required/>
+      </td>
+  </tr>
+<tr>
+    <td>
+        free pickup
+    </td>
+    <td>
+        <input type ="radio" id="pickup";">yes <input type ="radio">no
+    </td>
+</tr>
+<tr>
+    <td>
+        flight number
+    </td>
+    <td>
+        <input type="text" >
+    </td>
+</tr>  
+</tr>
+    <tr>
+        <td>
+            special requests 
+        </td>
+        <td>
+            <textarea rows="6" cols="30"></textarea>
+        </td>
+    </tr>
+</table>
+<br>
+<input type="submit" value="submit" style="background: rgb(24, 21, 224);color: white;">
+</form>
+        </body>
+</html>

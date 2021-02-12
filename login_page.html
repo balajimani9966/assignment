@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container{
+	width: 400px;
+	height: 350px;
+	text-align: center;
+	margin: auto;
+	background-color: white;
+    margin-top: 160px;
+    
+}
+input[type="text"],input[type="password"]{
+	margin-top: 30px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	background-color: rgb(236, 231, 231);
+	padding-left: 10px;
+}
+
+.btn-login{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 45px;
+    width: 300px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+body{
+	background-color: lawngreen;
+}
+.container{
+    color: rgb(200, 202, 196);
+}
+
+  </style>
+	<title> Login Form in HTML5 and CSS3</title>
+	<link rel="stylesheet" a href="C:\Users\Toshiba\Desktop\notes\style.css">
+	
+</head>
+<body>
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if ( name=="johndoe"&& password=="johnDoe@1")
+        {
+         document.write("creditials are currect") 
+        }
+        
+        else 
+        {
+           alert("CREDENTIAL NOT CORRECT")
+        }
+        
+          }  
+
+        </script>
+
+        <form name="myform" method="post"  onsubmit="return validateform()" >  
+	<div class="container">
+			<div class="form-input">
+				<input type="text" placeholder="username" name="name" >	
+			</div>
+			<div class="form-input">
+				<input type="password" placeholder="password" name="password">
+            </div>
+            <input type="submit" value="LOGIN" class="btn-login"/>
+            <div> Not registered?<a href="#" class="create">Create an account</a></div>
+    </div>
+        </form>
+</body>
+</html>
