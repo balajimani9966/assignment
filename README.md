@@ -1,4 +1,11 @@
-1.clone the project
+clone the project
 
-2.navigate to registration form folder find the home.html and open in the browser
+#assigment_1
+Q1.registration form
+-->navigate to registration form folder find the qn1.html page
+
+#assignment_2
+1.login form
+
+
 
